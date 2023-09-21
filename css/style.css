@@ -42,6 +42,11 @@ header{
     display: flex;
     border-bottom: 0.5px solid white;
     align-items: center;
+    position: fixed; /* Establece la posición fija */
+    top: 0; /* Adhiere el header al borde superior de la ventana */
+    left: 0; /* Opcional: puedes configurar el lado izquierdo si es necesario */
+    right: 0;
+    z-index: 999; 
 }
 
 header figure{
@@ -74,6 +79,10 @@ header nav ul li a{
     font-size: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+}
+
+main{
+    margin-top: 5rem;
 }
 
 #inicio{
