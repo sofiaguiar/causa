@@ -42,9 +42,9 @@ header{
     display: flex;
     border-bottom: 0.5px solid white;
     align-items: center;
-    position: fixed; /* Establece la posición fija */
-    top: 0; /* Adhiere el header al borde superior de la ventana */
-    left: 0; /* Opcional: puedes configurar el lado izquierdo si es necesario */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
     right: 0;
     z-index: 999; 
 }
