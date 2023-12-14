@@ -20,7 +20,7 @@ body {
 }
 
 h1{
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-family: euclid-bold;
     color: white;
 }
@@ -42,9 +42,11 @@ header{
     display: flex;
     border-bottom: 0.5px solid white;
     align-items: center;
-    position: fixed; /* Establece la posición fija */
-    top: 0; /* Adhiere el header al borde superior de la ventana */
-    left: 0; /* Opcional: puedes configurar el lado izquierdo si es necesario */
+    position: fixed; 
+    font-size: 2rem;
+    font-weight: bold;
+    top: 0; 
+    left: 0; 
     right: 0;
     z-index: 999; 
 }
@@ -86,52 +88,32 @@ main{
 }
 
 #inicio{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, auto); 
-    height: 80vh;
+    /*height: 80vh;*/
+    margin: auto;
 }
 
 #inicio .inicioFigure{
-    grid-column: 1/4;
-    grid-row: 1/2;
-    margin-left: 2rem;
+    margin: auto;
 }
 
 #inicio .inicioFigure img{
-    width: 30%;
+    width: 40%;
+    margin: auto;
+    margin-left: 30%;
+    margin-top: -3%;
 }
 
 #inicio .inicioH1{
-    grid-column: 1/4;
-    grid-row: 2/5;
-    margin-left: 3rem;
-    margin-top: -3.5rem;
+   margin-top: -8%;
+   text-align: center;
 }
-
-#inicio .inicioDiv3{
-    grid-column: 4/6;
-    grid-row: 1/5;
-    border-left: 1px solid white;
-    height: 80vh;
-}
-
-#inicio .inicioDiv3 figure img{
-    width: 100%;
-    mix-blend-mode: luminosity;
-}
-
-#inicio .inicioH2{
-    grid-column: 4/6;
-    grid-row: 3/5;
-    border-left: 1px solid white;
-    height: 100%;
-} 
 
 #inicio .inicioH2 h2{
-    width: 90%;
+    text-align: center; 
+    width: 50%;   
     margin: auto;
-    margin-top: 7rem;
+    margin-top: 6%;
+    margin-bottom: 6%;
 } 
 
 #inicioDos{
@@ -219,8 +201,250 @@ main{
     font-size: 1.9;
 }
 
+#sobreNos{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(auto, auto);
+    max-height: 91vh;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+#sobreNos .f1{
+    grid-column: 1/4;
+    margin-top: 4.5rem;
+    margin-left: 4.5rem;
+}
+
+#sobreNos h1{
+    color: #C6DA22;
+    font-size: 4.5rem;
+}
+
+#sobreNos p{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+#sobreNos .divUno{
+   grid-column: 4/7;
+   position: relative;
+   z-index: 1;
+}
+
+#sobreNos .divUno p{
+    width: 40%;
+}
+
+#sobreNos .divUno img{
+    width: 110%;
+    margin: 2rem;
+    margin-top: 4.5rem;
+    margin-left: 5rem;padding: 0;
+}
+
+#sobreNos .divDos{
+    grid-column: 4/7;
+    margin-left: 12rem;
+    margin-top: -27rem;
+    width: 75%;
+    max-height: 10%;
+    position: relative;
+   z-index: 1;
+}
+
+#sobreNos .divDos p{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+#sobreNos .divDos h3{
+    margin-top: 1.5rem;
+}
+
+#sobreNos .divDos img{
+    width: 60%;
+}
+
+#sobreNos .f3{
+    grid-column: 7;
+    
+}
+
+#sobreNos .f3 img{
+    float: right;
+    margin-top: -37rem;
+    width: 95%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* SERVICIOS */
+#servicios {
+    display: flex;
+    padding: 4rem;
+}
+
+#servicios .servicios1 {
+    width: 40%; 
+    padding-top: 1.5rem;
+    box-sizing: border-box; 
+}
+
+#servicios .servicios1 h1 {
+    color: #C6DA22;
+}
+
+#servicios .servicios1 p {
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 2rem;
+    padding-left: 0rem;
+}
+
+#servicios .servicios1 p span{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#servicios .servicios1 h3{
+   
+    color: #03120E;
+    background-color: #C6DA22;
+    margin: 1.5rem;
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 10rem;
+
+}
+
+#servicios .servicios1 h3 img{
+    background: none;
+    width: 7%;
+}
+
+#servicios .servicios2 {
+    width: 50%; 
+    box-sizing: border-box; 
+}
+
+/* AGENCIA */
+
+#agencia{
+    background: #355852;
+    height: 90vh;
+    
+}
+
+#agencia h2 {
+    color: #C6DA22;
+    background-color: #355852;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+}
+#agencia h2 img {
+    background-color: #355852;
+    width: 4.5%;
+}
+
+#agencia div{
+    display: grid;
+    background-color: #355852;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#agencia div figure  {
+    width: 100%;
+    border-radius: 2.5rem;
+}
 
 
+#agencia div figure img{
+    width: 85%;
+    margin: auto;
+    display: block;
+}
+
+/* AGTECH */
+
+#agtech h2 {
+    color: #C6DA22;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+}
+#agtech h2 img {
+    width: 4.5%;
+}
+
+#agtech{
+    display: flex;
+    height: 90vh;
+    border-bottom: 1px solid white;
+}
+
+#agtech .ag2 .fa5 {
+    mix-blend-mode: luminosity;
+    height: 100%;
+    margin-right: 0;
+
+}
+#agtech .ag2 .fa5 img{
+    width: auto;
+    height: 100%;
+}
+
+#agtech .ag1 {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.01fr, 1fr, 1fr;
+    gap: 1.5rem;
+}
+
+#agtech .ag1 h2 {
+    grid-column: 1 / span 2; /* Ocupa desde la columna 1 hasta la columna 2 */
+    grid-row: 1; /* Ocupa la primera fila */
+    padding: 2.5rem;
+    margin-left: 0;
+}
+
+#agtech .ag1 .fa1 {
+    grid-column: 1;
+    grid-row: 2; /* Ocupa la segunda fila */
+}
+
+#agtech .ag1 .fa2 {
+    grid-column: 2;
+    grid-row: 2; /* Ocupa la segunda fila */
+}
+
+#agtech .ag1 .fa3 {
+    grid-column: 1;
+    grid-row: 3; /* Ocupa la tercera fila */
+}
+
+#agtech .ag1 .fa4 {
+    grid-column: 2;
+    grid-row: 3; /* Ocupa la tercera fila */
+}
+
+
+
+
+#agtech  figure img{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
 
 
 
